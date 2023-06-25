@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+/* Root section for Web page */
+:root {
+    --main-color: rgb(241, 42, 158);
+    --secondary-color: rgb(212, 212, 212);
+    --third-color: rgb(22, 4, 77);
+    ---fourth-color: rgb(133, 111, 255);
+}
+.main-title {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 400;
+}
+/* Home page section */
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(9,0,77,0.62),rgba(9,0,77,0.62)),
+    url(./assets/photography.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 35px 60px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+nav h1 {
+    position: relative;
+    letter-spacing: 1px;
+    background-color: var(--main-color);
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav h1:hover {
+    background-color: var(--main-color);
+    transition: 0.2s;
+    box-shadow: 0px 0px 20px 2.5px var(--main-color);
+}
+.title {
+    color: var(--third-color);
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+nav ul li a:hover {
+    color: var(--main-color);
+}
+.login-btn {
+    cursor: pointer;
+    padding: 8px 14px;
+    border: 2px solid var(--main-color);
+    border-radius: 50px;
+    background-color: transparent;
+    letter-spacing: 1px;
+}
+.login-btn:hover {
+    background-color: var(--main-color);
+    transition: 0.2s;
+    box-shadow: 0px 0px 20px 2px var(--main-color);
+}
+.login-btn a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.content-details {
+    align-items: center;
+    text-align: center;
+    margin-top: 20%;
+}
+.content-details h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1.6px;
+    color: white;
+    font-weight: 400;
+}
+.content-details p {
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    color: #ffffff;
+    font-weight: 100;
+    margin-top: 5px;
+}
+.content-details button {
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    color: white;
+    letter-spacing: 1px;
+}
+.content-details button:hover {
+    background-color: rgb(247, 81, 178);
+    color: black;
+    transform: scale(1.04);
+}
+.content-details ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    list-style: none;
+    display: inline-block;
+}
+.content-details ul li i {
+    cursor: pointer;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 25px;
+    color: #ffffff;
+}
+.content-details ul li i:hover {
+    color: var(--main-color);
+}
+/* Service section */
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 60px 0 60px;
+}
+.service-container {
+    background-color: blueviolet;
+    padding: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #000000;
+}
+.card-1, .card-2, .card-3 {
+    border: 1px solid var(--main-color);
+    border: 1px solid var(--main-color);
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px 5px #000000;
+}
+.card-2 {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.services .card-1:hover {
+    transform: translateY(-2%);
+}
+.services .card-2:hover {
+    transform: translateY(-2%);
+}
+.services .card-3:hover {
+    transform: translateY(-2%);
+}
+.services h3{
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.services img {
+    width: 250px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px 1px #000000;
+}
+/* Product selling details */
+.products {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 40px;
+    text-align: center;
+    padding:  0 180px 0 180px;
+}
+.products h3 {
+    margin-bottom: 4px;
+}
+.products s {
+    color: #ff0000;
+    margin-right: 10px;
+}
+.product-1, .product-2, .product-3, .product-4 {
+    padding: 10px 20px;
+    background-color: var(---fourth-color);
+}
+.product-1 {
+    border-radius: 40px 3px 3px 3px;
+}
+.product-2 {
+    border-radius: 3px;
+}
+.product-3 {
+    border-radius: 3px;
+}
+.product-4 {
+    border-radius: 3px 40px 3px 3px;
+}
+.products img {
+    width: 150px;
+    border-radius: 5px;
+}
+.product-1:hover {
+    transform:scale(1.02);
+}
+.product-2:hover {
+    transform:scale(1.02);
+}
+.product-3:hover {
+    transform:scale(1.02);
+}
+.product-4:hover {
+    transform:scale(1.02);
+}
+.products span {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+}
+.products button {
+    margin-top: 10px;
+    width: 100%;
+    min-height: 40px;
+    background-color: yellow;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 4x;
+}
+/* About us section */
+.about {
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.about-section {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+.about img {
+    width: 280px;
+    border-radius: 10px;
+}
+.about img:hover {
+    transform: scale(1.02);
+    transition: 0.6s;
+}
+.about-section h1 {
+    color: var(--main-color);
+    margin: 0 0 20px 20px;
+}
+.about span {
+    color: #ffffff;
+}
+.about p {
+    margin-left: 20px;
+    color: #ffffff;
+    letter-spacing: 0.8px;
+}
+/* Footer section */
+.contact-footer {
+    background-image: linear-gradient(rgba(9,0,77,0.62),rgba(9,0,77,0.62)),
+    url(./assets/girl3.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    border: none;
+    border-radius: 65px 0 65px 0;
+}
+hr {
+    display: none;
+}
+.contact-footer h2 {
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0.6px;
+}
+.social-links ul li {
+    list-style: none;
+    padding-top: 15px;
+}
+.social-links ul li a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 0.8px;
+    font-weight: 200;
+}
+.social-links ul li a:hover {
+    color: var(--main-color);
+}
+.social-links li i {
+    color: #ffffff;
+}
+.contact-info ul li {
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 0.8px;
+    font-weight: 200;
+    list-style: none;
+    padding-top: 15px;
+}
+.contact-info ul li i {
+    color: #ffffff;
+}
+.contact-info ul li span {
+    margin-left: 10px;
+}
+.contact-form {
+    padding: 15px;
+    border-radius: 5px;
+    width: 450px;
+}
+.contact-form input {
+    border: none;
+    width: 100%;
+    margin: 8px 0px 8px 0;
+    padding: 10px;
+}
+.contact-form input[type=text] {
+    margin-top: 15px;
+}
+.contact-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0 5px 0px;
+    resize: none;
+}
+.contact-form input, textarea {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    font-weight: 100;
+}
+.contact-footer button {
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    letter-spacing: 0.6px;
+    border-radius: 3px;
+    outline: none;
+}
+.contact-footer button:hover {
+    background-color: var(--main-color);
+    transition: 0.2s;
+}
+.contact-footer button i {
+    font-size: 15px;
+    margin-right: 4px;
+}
+/* Copyright Footer section */
+footer {
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+footer p {
+    color: rgb(83, 83, 83);
+    letter-spacing: 0.6px;
+}
+/* --------- Responsive designing ---------- */
+@media screen and (max-width: 768px){
+    /* Home page section Responsive */
+    .container {
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+    }
+    .container nav ul {
+        display: none;
+    }
+    .content-details {
+        text-align: center;
+        margin-top: 40%;
+    }
+    .content-details ul li i {
+        font-size: 18px;
+    }
+    /* Our servces section Responsive */
+    .services {
+        display: contents;
+        align-items: center;
+        justify-content: center;
+    }
+    .service-container {
+        background-color: blueviolet;
+        padding: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 5px #000000;
+    }
+    .card-1, .card-2, .card-3 {
+        box-shadow: none;
+        margin: 20px 10px 20px 10px;
+    }
+    /* Our products section Responsive */
+    .products {
+        display: contents;
+        align-items: center;
+        justify-content: center;
+    }
+    .product-1, .product-2, .product-3, .product-4 {
+        padding: 10px 15px;
+        margin: 20px 60px 20px 60px;
+    }
+    /* About us section */
+    .about {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .about-section {
+        display: inline-block;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+    .about-section h1 {
+        color: var(--main-color);
+        margin-top: 10px;
+    }
+    /* Contact footer section Responsive */
+    .contact-footer {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    hr {
+        display: block;
+    }
+    .contact-footer h2 {
+        text-align: center;
+    }
+    .social-links {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .contact-info {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-form {
+        border-radius: 5px;
+        width: 350px;
+    }
+    .contact-form h2 {
+        margin-bottom: 10px;
+    }
+}

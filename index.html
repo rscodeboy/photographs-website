@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initia2l-scale=1.0">
+    <title>Landing webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/otr.png" type="image/x-icon">
+</head>
+<body>
+<!-- Home page section -->
+    <div class="container">
+        <nav>
+            <h1>Photo<span class="title">Graphs</span></h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#our-products">Our products</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <button class="login-btn"><a href="#">Signup</a></button>
+            </ul>
+        </nav>
+        <div>
+        <div class="content-details">
+            <h1>Grow your Photographs with Ours</h1>
+            <p>You have a Talent, We have chances to make your Photographs with us.</p>
+            <button>See Details</button>
+            <!-- <ul>
+                <li><a href="#"><i class="fa-brands fa-instagram"></a></i></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></a></i></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></a></i></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></a></i></li>
+            </ul> -->
+        </div>
+        </div>
+    </div>
+<!-- Service section -->
+<div id="services">
+    <h1 class="main-title">--- Services ---</h1>
+    <div class="service-container">
+        <div class="services">
+            <div class="card-1">
+                <h3>Travel & Tourism</h3>
+                <img src="./Services/tourism.jpg" alt="Tourism" />
+            </div>
+            <div class="card-2">
+                <h3>Celebrates & Functions</h3>
+                <img src="./Services/function.jpg" alt="Functions" />
+            </div>
+            <div class="card-3">
+                <h3>Health & Fitness</h3>
+                <img src="./Services/health.jpg" alt="Health" />
+            </div>
+    </div>
+    </div>
+</div>
+<!-- Product selling details -->
+<div id="our-products">
+    <h1 class="main-title">--- Our Products ---</h1>
+    <div class="products">
+        <div class="product-1">
+            <h3>50% off</h3>
+            <img src="./Products/camera-1.jpg" alt="Product-1" />
+            <p><s>$1600</s>$800</p>
+            <span>Canon EOS 200D</span>
+            <button>Buy now</button>
+        </div>
+        <div class="product-2">
+            <h3>20% off</h3>
+            <img src="./Products/camera-2.jpg" alt="Product-2" />
+            <p><s>$1200</s>$940</p>
+            <span>Soni ILCE-6400</span>
+            <button>Buy now</button>
+        </div>
+        <div class="product-3">
+            <h3>35% off</h3>
+            <img src="./Products/camera-3.jpg" alt="Product-3" />
+            <p><s>$1200</s>$780</p>
+            <span>Nikon Z50</span>
+            <button>Buy now</button>
+        </div>
+        <div class="product-4">
+            <h3>40% off</h3>
+            <img src="./Products/camera-4.jpg" alt="Product-4" />
+            <p><s>$2000</s>$1200</p>
+            <span>Soni ILCE6400M</span>
+            <button>Buy now</button>
+        </div>
+    </div>
+</div>
+<!-- About section -->
+<div id="about">
+    <h1 class="main-title">--- About Us ---</h1>
+    <div class="about">
+        <div class="about-section">
+            <div>
+                <img src="./assets/about-images.jpg" alt="about-image" />
+            </div>
+            <div>
+                <h1>About Us!</h1>
+                <!-- <span></span> -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nulla culpa? Facilis iste facere, voluptatibus voluptatem ducimus, corporis sed itaque sequi deserunt molestias eveniet id doloremque! Odio expedita optio rem.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact Footer section -->
+<div>
+    <div class="contact-footer">
+        <div class="social-links">
+            <h2>Our Social</h2>
+            <ul>
+                <li><i class="fa-brands fa-instagram"></i><a href="#">Instagram</a></li>
+                <li><i class="fa-brands fa-facebook"></i><a href="#">Facebook</a></li>
+                <li><i class="fa-brands fa-linkedin"></i><a href="#">LinkedIn</a></li>
+                <li><i class="fa-brands fa-twitter"></i><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+        <hr />
+        <div class="contact-info">
+            <h2>Contact Info</h2>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i><span>115A, Anna nagar, Erode 638501.</span></li>
+                <li><i class="fa-solid fa-envelope"></i><span>photographics@gmail.com</span></li>
+                <li><i class="fa-solid fa-phone"></i><span>+91 0638 4484 852</span></li>
+                <li><i class="fa-solid fa-clock"></i><span>Mon-Fri 9:00 AM to 4:00 PM</span></li>
+            </ul>
+        </div>
+        <hr />
+        <div class="contact-form">
+            <h2>Contact form</h2>
+            <form action="#" method="post" >
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name..." onkeyup="nameValidate()"/>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email address...">
+                </div>
+                <div>
+                    <textarea name="comments" id="comments" placeholder="Write something!..."></textarea>
+                </div>
+                <button><i class="fa-solid fa-arrow-right"></i>Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Copyright Footer section -->
+<footer>
+    <p>Copyright © <script>var currentYear = new Date(); document.write(currentYear.getFullYear())</script></p>
+</footer>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
